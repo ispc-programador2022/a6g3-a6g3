@@ -4,4 +4,4 @@ GRUPO 3 - AULA 6
 PRODUCT OWNER: Damian Guidone
 SCRUM MASTER: Belen Garcia Moyanesi
 DESARROLLADORES: 
-1)
+1) Heber Rafael, Gomez Olmos
