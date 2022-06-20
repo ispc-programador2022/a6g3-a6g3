@@ -5,3 +5,4 @@ PRODUCT OWNER: Damian Guidone
 SCRUM MASTER: Belen Garcia Moyanesi
 DESARROLLADORES: 
 1) Heber Rafael, Gomez Olmos
+2) Nicolás González Da Silva
