@@ -6,3 +6,4 @@ SCRUM MASTER: Belen Garcia Moyanesi
 DESARROLLADORES: 
 1) Heber Rafael, Gomez Olmos
 2) Nicolás González Da Silva
+3) Beverly Gonzalez Casanova
