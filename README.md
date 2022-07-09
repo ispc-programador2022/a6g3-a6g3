@@ -6,7 +6,7 @@
 
 **Product Owner:** [*Damian Guidone.*]()  
 
-**Scrum Master:** [*Gustavo Alberto Godoy.*]()  
+**Scrum Master:** [*Gustavo Alberto Godoy.*](https://github.com/chulkx)  
 
 <code>Desarrolladores:</code>  
 > - [`Cintia Guillete`]()
