@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-'''
-Recibe 2 valores enteros.
-Retorna la suma de los 2 elementos.
-'''
+def suma (a,b):
+    return (a+b)
+print (suma (a,b))
