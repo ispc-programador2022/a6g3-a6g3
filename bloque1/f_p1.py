@@ -10,16 +10,19 @@ funciones anteriores.
 Retorna la resta de los 2 primero por el 3er parámetros, usando las funciones
 anteriores
 '''
-from f_producto import producto
-from f_suma import suma
-from f_resta import resta
+
+import bloque1.f_producto as producto
+import bloque1.f_suma as suma
+import bloque1.f_resta as resta
+
+
 
 def p1(a,b,c):
     if type(a)==int and type(b)==int and type(c)==int:      #compruebo el tipo de valores ingresados
         #res = (suma(producto(a,b),c),producto(suma(a,b),c),producto(resta(a,b),c))
-        res_1 = suma(producto(a,b),c)
-        res_2 = producto(suma(a,b),c)
-        res_3 = producto(resta(a,b),c)
+        res_1 = suma.suma(producto.producto(a,b),c)
+        res_2 = producto.producto(suma.suma(a,b),c)
+        res_3 = producto.producto(resta.resta(a,b),c)
         res = (res_1,res_2,res_3)
         return res
     else:
