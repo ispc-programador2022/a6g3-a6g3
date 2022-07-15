@@ -16,7 +16,6 @@ import bloque1.f_suma as suma
 import bloque1.f_resta as resta
 
 
-
 def p1(a,b,c):
     if type(a)==int and type(b)==int and type(c)==int:      #compruebo el tipo de valores ingresados
         #res = (suma(producto(a,b),c),producto(suma(a,b),c),producto(resta(a,b),c))
@@ -28,5 +27,5 @@ def p1(a,b,c):
     else:
         return('Los valores ingresados son incorrectos.')
 
-#Prueba (no puede realizarse si las funciones f_suma, f_resta y f_producto aun no fueron escritas)
+#Prueba
 #p1(1,5,7)
