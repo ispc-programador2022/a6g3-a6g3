@@ -5,8 +5,7 @@
 Funcion que invoca al resto de la funciones.
 '''
 
-from msilib import type_key
-from tkinter import E
+
 import bloque1.f_cociente as cociente
 import bloque1.f_ing2i as ing2i
 import bloque1.f_ing2s as ing2s
