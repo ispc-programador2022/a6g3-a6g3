@@ -61,7 +61,7 @@ print('\nRetorno de la funcion f_modulo: ', modulo.modulo(enteros[0], enteros[1]
 print('\nRetorno de la funcion f_potencia: ', potencia.potencia(enteros[0], enteros[1]), end='\n')
 print('\nRetorno de la funcion f_radicacion: ', radicacion.radicacion(enteros[0], enteros[1]), end='\n')
 
-# entero3 = int(input('ingrese el 3 entero: '))
+print('\n')
 fp1 = p1.p1(enteros[0], enteros[1])
 a=enteros[0]
 b=enteros[1] 
@@ -70,5 +70,7 @@ print('\nRetorno de la funcion f_p1: ',f'''
                             {a} * {b} + {c} = {fp1[0]}
                             ({a} + {b}) * {c} ={fp1[1]}
                             ({a} - {b}) * {c} ={fp1[2]}''')
+print('\n')
+
 
 

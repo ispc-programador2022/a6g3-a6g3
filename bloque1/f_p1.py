@@ -25,7 +25,7 @@ def p1(a,b):
             c = int(input('Ingrese un tercer valor del tipo entero: '))
             cont = False
         except ValueError:
-            print('El valor ingresado no es un entero. Intente nuevamente o presione "ctrl+q".')
+            print('El valor ingresado no es un entero. Intente nuevamente o presione "ctrl+c".')
             cont = True
     if type(a)==int and type(b)==int and type(c)==int:      #compruebo el tipo de valores ingresados
         #res = (suma(producto(a,b),c),producto(suma(a,b),c),producto(resta(a,b),c))
