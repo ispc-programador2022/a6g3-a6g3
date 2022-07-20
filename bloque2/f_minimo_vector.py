@@ -1,6 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-'''
-Función que calcule devuelva el mínimo del vector obtenido en genrnd. 
-'''
+def minimo_del_vector(vector):
+    
+    menor =vector [0] 
+    
+    for n in range(1, len (vector)) :
+        if vector [n] < menor:
+            menor= vector [n]
+    return menor
