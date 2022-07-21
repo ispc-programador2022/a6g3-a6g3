@@ -12,7 +12,7 @@ elevados al cuadrado y divididos entre el total de observaciones.
 
 
 
-from f_media import media
+from bloque2.f_media import media
 
 
 def varianza(vector):
