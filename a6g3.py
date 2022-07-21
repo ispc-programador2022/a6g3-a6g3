@@ -18,6 +18,17 @@ import bloque1.f_radicacion as radicacion
 import bloque1.f_resta as resta
 import bloque1.f_suma as suma
 
+import bloque2.f_cociente_comb as cociente_comb
+import bloque2.f_genrnd as genrnd
+import bloque2.f_maximo_vector as maximo_vector
+import bloque2.f_media as media
+import bloque2.f_mediana as mediana
+import bloque2.f_minimo_vector as minimo_vector
+import bloque2.f_producto_comb as producto_comb
+import bloque2.f_rango as rango
+import bloque2.f_suma_comb as suma_comb
+import bloque2.f_varianza as varianza
+
 
 def tipo_dato(dato):
     if isinstance(dato, int):
@@ -42,7 +53,7 @@ print()
 print('Funcion ing2s, pide el ingreso de dos valores del tipo string')
 strings = ing2s.ing2s()
 print()
-print('Los valores ingresados son: ')
+#print('Los valores ingresados son: ')
 
 print(f'''
 Valores ingresados: {enteros[0]} -> {tipo_dato(enteros[0])}       {enteros[1]} -> {tipo_dato(enteros[1])}
@@ -50,8 +61,8 @@ Valores ingresados: {enteros[0]} -> {tipo_dato(enteros[0])}       {enteros[1]} -
 ''')
 print()
 
-print('='*50)
-print()
+print('='*100)
+print('\nRetornos de las funciones del Bloque 1\n')
 
 print('\nRetorno de la funcion f_suma: ', suma.suma(enteros[0], enteros[1]), end='\n')
 print('\nRetorno de la funcion f_resta: ', resta.resta(enteros[0], enteros[1]), end='\n')
@@ -72,5 +83,22 @@ print('\nRetorno de la funcion f_p1: ',f'''
                             ({a} - {b}) * {c} ={fp1[2]}''')
 print('\n')
 
+print('='*100)
+print('\nRetornos de las funciones del Bloque 2\n')
+vector_corto = genrnd.genrnd()
+#print('\nRetorno de la funcion f_suma_comb: ', suma_comb.suma_comb(vector_corto), end = '\n')
+#print('\nRetorno de la funcion f_cociente_comb:  ', cociente_comb.cociente_comb(vector_corto), end = '\n')
+print('\nRetorno de la funcion f_producto_comb: ', producto_comb.producto_comb1(vector_corto), end = '\n')
+print('\nRetorno de la funcion f_producto_comb: ', producto_comb.producto_comb2(vector_corto), end = '\n')
+print('\nRetorno de la funcion f_producto_comb: ', producto_comb.producto_comb3(vector_corto), end = '\n')
+print('\nRetorno de la funcion f_media: ', media.media(vector_corto), end = '\n')
+print('\nRetorno de la funcion f_mediana: ', mediana.mediana(vector_corto), end = '\n')
+#print('\nRetorno de la funcion f_rango: ', rango.rango(vector_corto), end = '\n')
+print('\nRetorno de la funcion f_varianza: ', varianza.varianza(vector_corto), end = '\n')
+print('\nRetorno de la funcion f_minimo_vector: ', minimo_vector.minimo_del_vector(vector_corto), end = '\n')
+print('\nRetorno de la funcion f_maximo_vector: ', maximo_vector.maximo_del_vector(vector_corto), end = '\n')
 
+print()
+print('='*100)
+print('\nRetornos de las funciones del Bloque 2\n')
 
