@@ -29,6 +29,16 @@ import bloque2.f_rango as rango
 import bloque2.f_suma_comb as suma_comb
 import bloque2.f_varianza as varianza
 
+import bloque3.f_genrnd_ as genrnd_
+import bloque3.f_maximo_ as maximo_
+import bloque3.f_media_ as media_
+import bloque3.f_mediana_ as mediana_
+import bloque3.f_minimo_ as minimo_
+import bloque3.f_rango_ as rango_
+import bloque3.f_tiempo_bloque2 as tiempo_b2
+import bloque3.f_tiempo_bloque3 as tiempo_b3
+import bloque3.f_varianza_ as varianza_
+
 
 def tipo_dato(dato):
     if isinstance(dato, int):
@@ -42,7 +52,7 @@ def tipo_dato(dato):
     return res
 
 
-
+#===================        Bloque 1        ======================#
 presentacion.funcionPresentacion()
 print()
 print()
@@ -82,23 +92,37 @@ print('\nRetorno de la funcion f_p1: ',f'''
                             ({a} + {b}) * {c} ={fp1[1]}
                             ({a} - {b}) * {c} ={fp1[2]}''')
 print('\n')
-
+#===================        Bloque 2        ======================#
 print('='*100)
 print('\nRetornos de las funciones del Bloque 2\n')
 vector_corto = genrnd.genrnd()
 #print('\nRetorno de la funcion f_suma_comb: ', suma_comb.suma_comb(vector_corto), end = '\n')
-#print('\nRetorno de la funcion f_cociente_comb:  ', cociente_comb.cociente_comb(vector_corto), end = '\n')
+#print('\nRetorno de la funcion f_cociente_comb:  ', cociente_comb.cociente(vector_corto), end = '\n')
 print('\nRetorno de la funcion f_producto_comb: ', producto_comb.producto_comb1(vector_corto), end = '\n')
 print('\nRetorno de la funcion f_producto_comb: ', producto_comb.producto_comb2(vector_corto), end = '\n')
 print('\nRetorno de la funcion f_producto_comb: ', producto_comb.producto_comb3(vector_corto), end = '\n')
 print('\nRetorno de la funcion f_media: ', media.media(vector_corto), end = '\n')
 print('\nRetorno de la funcion f_mediana: ', mediana.mediana(vector_corto), end = '\n')
-#print('\nRetorno de la funcion f_rango: ', rango.rango(vector_corto), end = '\n')
+print('\nRetorno de la funcion f_rango: ', rango.rango_vector(vector_corto), end = '\n')
 print('\nRetorno de la funcion f_varianza: ', varianza.varianza(vector_corto), end = '\n')
 print('\nRetorno de la funcion f_minimo_vector: ', minimo_vector.minimo_del_vector(vector_corto), end = '\n')
 print('\nRetorno de la funcion f_maximo_vector: ', maximo_vector.maximo_del_vector(vector_corto), end = '\n')
 
 print()
+
+#===================        Bloque 3        ======================#
 print('='*100)
 print('\nRetornos de las funciones del Bloque 2\n')
 
+vector_largo = genrnd_.genrnd()
+
+#print('\nRetorno de la funcion f_media_: ', media_.media_(vector_largo), end = '\n')
+#print('\nRetorno de la funcion f_mediana_: ', mediana_.mediana_(vector_largo), end = '\n')
+#print('\nRetorno de la funcion f_rango_: ', rango_.rango_(vector_largo), end = '\n')
+#print('\nRetorno de la funcion f_varianza_: ', varianza_.varianza_(vector_largo), end = '\n')
+print('\nRetorno de la funcion f_minimo_vector_: ', minimo_.minimo_del_vector(vector_largo), end = '\n')
+print('\nRetorno de la funcion f_maximo_vector_: ', maximo_.maximo_del_vector(vector_largo), end = '\n')
+
+print('\nComparación en los tiempos de ejecucion de los bloques 2 y 3 (mismas funciones): ', end='\n')
+#print('\nTiempo de ejecucion del bloque 2: ', tiempo_b2.tiempo(), end='\n')
+#print('\nTiempo de ejecucion del bloque 3: ', tiempo_b3.tiempo(), end='\n')
